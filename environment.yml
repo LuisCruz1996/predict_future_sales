@@ -1,0 +1,31 @@
+name: env_future_sales
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  # BLAS: OpenBLAS en lugar de MKL (MKL hacía caer el kernel de VS Code)
+  - libblas=*=*openblas
+  # Datos y estadística
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  # Machine Learning
+  - scikit-learn
+  # Gráficas
+  - matplotlib
+  - seaborn
+  # Notebooks
+  - ipykernel
+  - jupyterlab
+  # Utilidades de la plantilla
+  - typer
+  - loguru
+  - tqdm
+  - python-dotenv
+  - pytest
+  - ruff
+  # Módulo del proyecto
+  - pip:
+    - -e .
