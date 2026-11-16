@@ -17,11 +17,15 @@ Reglas que se siguen siempre en este proyecto.
 - Después de cada gráfica o tabla relevante va una celda markdown **Interpretación** con lo que muestran los datos, usando las cifras reales obtenidas al ejecutar el notebook.
 - Gráficas: `sns.set_theme(style="whitegrid")`, título, ejes con etiqueta, separador de miles en los valores grandes y `tight_layout`.
 - Carga de datos con rutas parametrizadas y una función que lance `FileNotFoundError("No se encontró el archivo: ...")`.
-- Después de editar el notebook, ejecutarlo completo para validarlo y guardar las salidas:
+- Después de editar el notebook, ejecutarlo completo para validarlo y guardar las salidas (bash):
 
   ```
-  C:\Users\luisi\anaconda3\envs\env_future_sales\python.exe -m jupyter nbconvert --to notebook --execute --inplace notebooks/01_exploratory_data_analysis.ipynb
+  PYTHONNOUSERSITE=1 /c/Users/luisi/anaconda3/envs/env_future_sales/python.exe -m nbconvert --to notebook --execute --inplace notebooks/01_exploratory_data_analysis.ipynb
   ```
+
+  - Usar `-m nbconvert`, no `-m jupyter nbconvert`: este último resuelve a otro Jupyter del PATH del sistema.
+  - `PYTHONNOUSERSITE=1` evita que se carguen paquetes de `AppData\Roaming\Python\Python311\site-packages`, que
+    tapan a los del entorno (ipykernel, IPython, zmq...). El kernelspec `env_future_sales` ya lo define en su `env`.
 
   Luego resumir los resultados clave.
 
