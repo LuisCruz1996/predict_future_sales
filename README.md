@@ -9,6 +9,14 @@ videojuegos y entretenimiento, como preparación para pronosticar las ventas men
 tienda-producto en **noviembre de 2015**. Proyecto del curso de Product Development de la maestría en
 Business Intelligence.
 
+## Entregables
+
+| Entregable | Enlace |
+|---|---|
+| Notebook del EDA (secciones 1 a 10, con salidas) | [notebooks/01_exploratory_data_analysis.ipynb](notebooks/01_exploratory_data_analysis.ipynb) |
+| Figuras clave y tabla resumen de ACF/PACF | [reports/figures/](reports/figures/) |
+| Evidencia del pull del repositorio | [reports/evidencias/pull_repositorio.png](reports/evidencias/pull_repositorio.png) |
+
 ## Datos
 
 Los datos provienen de la competencia de Kaggle
@@ -68,7 +76,8 @@ modo editable (`-e .`).
 ├── notebooks
 │   └── 01_exploratory_data_analysis.ipynb   <- Notebook principal del EDA
 ├── reports
-│   └── figures        <- Figuras clave del EDA (PNG a 150 dpi) y tabla resumen de ACF/PACF
+│   ├── figures        <- Figuras clave del EDA (PNG a 150 dpi) y tabla resumen de ACF/PACF
+│   └── evidencias     <- Captura del pull del repositorio
 ├── predict_future_sales   <- Módulo Python del proyecto (plantilla cookiecutter)
 ├── environment.yml    <- Entorno conda (env_future_sales)
 ├── requirements.txt   <- Dependencias con versiones exactas
@@ -120,6 +129,12 @@ productos, visualizaciones clave, ACF/PACF e insights.
 ![Mezcla de ventas por categoría y plataforma](reports/figures/8d_heatmap_categoria_mes.png)
 
 ![Cobertura de test.csv](reports/figures/10b_cobertura_test.png)
+
+## Evidencia del pull
+
+Actualización del repositorio local con `git pull origin main` desde GitHub (punto 1.f del enunciado):
+
+![Evidencia del git pull](reports/evidencias/pull_repositorio.png)
 
 ## Próximos pasos
 
