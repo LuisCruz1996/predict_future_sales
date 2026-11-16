@@ -16,6 +16,7 @@ Reglas que se siguen siempre en este proyecto.
 - En el código, comentarios solo donde aporten.
 - Después de cada gráfica o tabla relevante va una celda markdown **Interpretación** con lo que muestran los datos, usando las cifras reales obtenidas al ejecutar el notebook.
 - Gráficas: `sns.set_theme(style="whitegrid")`, título, ejes con etiqueta, separador de miles en los valores grandes y `tight_layout`.
+- Tablas: las columnas de texto (celdas y encabezado) van alineadas a la izquierda. Mostrarlas con la función `style_table` del notebook (sección "Presentación de tablas"), que además oculta el índice y aplica separador de miles.
 - Carga de datos con rutas parametrizadas y una función que lance `FileNotFoundError("No se encontró el archivo: ...")`.
 - Después de editar el notebook, ejecutarlo completo para validarlo y guardar las salidas (bash):
 
