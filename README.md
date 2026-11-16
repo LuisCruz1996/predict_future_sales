@@ -130,3 +130,5 @@ Con base en el EDA, la etapa de modelado debe:
   categoría;
 - excluir las tiendas de evento 9 y 20 del entrenamiento;
 - validar de forma temporal (por ejemplo, entrenar hasta septiembre de 2015 y validar en octubre).
+
+Autor: Luis Manuel Cruz — Maestría en BI, Product Development
