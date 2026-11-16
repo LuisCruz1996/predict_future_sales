@@ -9,6 +9,7 @@ dependencies:
   # Datos y estadística
   - numpy
   - pandas
+  - pyarrow
   - scipy
   - statsmodels
   # Machine Learning
